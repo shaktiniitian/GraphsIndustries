@@ -1,0 +1,478 @@
+@media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
+    .main-timeline-2::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .timeline-2 {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline-2::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left-2::after,
+    .right-2::after {
+        left: 18px;
+    }
+
+    .left-2::before {
+        right: auto;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right-2 {
+        left: 0%;
+    }
+
+    .card-img-top {
+        width: 100% !important;
+    }
+
+    .right span {
+        font-style: normal;
+        font-weight: 600;
+        line-height: 33px !important;
+        color: #000 !important;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin-top: 4px !important;
+        margin-bottom: 14px;
+    }
+
+    .Sliderbanner-section .Modern-Slider .item .img-fill .info {
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background: rgb(0 0 0 / 48%);
+    }
+
+    .apply {
+        align-items: left !important;
+        width: 137px !important;
+        height: 36px !important;
+        background: rgb(230 187 0) !important;
+        margin-bottom: 15px !important;
+
+    }
+
+
+
+    .custom_card2 {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+@media (max-width: 576px) {
+    .Testimonials-section .sd_scroll {
+        height: auto;
+        overflow: auto;
+        max-height: 240px;
+    }
+
+    .Testimonials-section .thumbnail,
+    .Testimonials-section .btnNtxt {
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .right marquee {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .PhotoGallery-section #exitButton {
+        font-size: 3em;
+    }
+
+    .services-section .services-box {
+        text-align: center;
+        margin-top: 36px;
+        padding: 30px 0 20px;
+        height: auto !important;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .PhotoGallery-section #prevButton {
+        font-size: 3em;
+    }
+
+    .PhotoGallery-section #nextButton {
+        font-size: 3em;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .PhotoGallery-section #overlay img {
+        width: 50%;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .PhotoGallery-section #overlay img {
+        width: 60%;
+    }
+
+    .services-section .services-box {
+        text-align: center;
+        margin-top: 36px;
+        padding: 30px 0 20px;
+        height: auto !important;
+    }
+
+    .header-section .topheader-section .topheader-right a {
+        color: #f7f0f0;
+        font-size: 12px;
+        /* margin-left: 10px; */
+        border-left: 1px solid #d9d9d9;
+        padding-left: 10px;
+    }
+
+    .ContactUs-section .ContactUs-form {
+        padding: 40px;
+        box-shadow: 0 0 10px 1px #dddddd;
+        border-radius: 10px;
+        display: block;
+        background: #fff;
+        margin-top: 30px;
+    }
+
+    .ContactUs-section .ContactUs-form ul {
+        width: 100%;
+        margin-right: 20px;
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .header-section .navigation-header .topnav.responsive {
+        position: relative;
+    }
+
+    .header-section .navigation-header .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 14px;
+    }
+
+    .padding {
+        padding-bottom: 10px !important;
+    }
+
+    .header-section .navigation-header .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .services-section .services-box {
+        text-align: center;
+        margin-top: 36px;
+        padding: 30px 0 20px;
+        height: auto;
+    }
+
+    .Categories-section {
+        padding: 0em 0 !important;
+    }
+
+    .header-section .topheader-section .topheader-right {
+        margin: 0;
+        text-align: center !important;
+    }
+
+    .topheader-section h1 {
+        text-align: center !important;
+        font-size: 24px;
+    }
+
+    .right {
+        color: #2a4747 !important;
+        text-align: center !important;
+        padding: 16px 8px !important;
+    }
+
+    .Sliderbanner-section .Modern-Slider .item h3 {
+        display: none !important;
+    }
+
+    .Sliderbanner-section .Modern-Slider .item .info .banner2txt h5 {
+        display: none !important;
+    }
+
+    .Sliderbanner-section .Modern-Slider .item .img-fill .info {
+        line-height: 70vh !important;
+    }
+
+
+
+    .Sliderbanner-section .Modern-Slider .item .info .banner1txt {
+        width: 100%;
+        text-align: center;
+        padding: 0px !important;
+    }
+
+    .image_footer {
+        position: absolute;
+        top: 414px !important;
+        background: #fff;
+        width: 90%;
+        padding: 0px 20px;
+    }
+
+    .sidebar {
+        display: none !important;
+    }
+
+    .PhotoGallery-section .img-wrapper {
+        position: relative;
+        /* margin-top: 30px; */
+        overflow: hidden;
+        border: 1px solid #e9e9e9;
+        border-radius: 4px;
+        padding: 20px;
+        background-color: #fcf6f6;
+        margin-top: 12px !important;
+        border: 1px solid #2a4747;
+        margin-bottom: 12px;
+    }
+
+
+
+    .Sliderbanner-section .Modern-Slider .item .info .banner2txt {
+        width: 100%;
+        text-align: 0 !important;
+        padding: 0em 0em !important;
+        margin-top: 31px !important;
+        margin-left: 0 !important;
+
+    }
+
+    .header-section .navigation-header .topnav {
+        overflow: hidden;
+        /* display: flex; */
+        align-items: center;
+        justify-content: end;
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .header-section .navigation-header .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .header-section .navigation-header .topnav a{
+        color: #fff;
+    }
+
+    ul.social-media{
+    list-style: none;
+    padding: 6px 0;
+    margin: 0;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    }
+
+    .custom_card{
+        margin-bottom: 12px !important;
+    }
+
+    .left_icons img {
+        padding: 8px;
+    }
+
+    .left_icons {
+        background-color: #2a4747;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .left_icons span {
+        color: #fff;
+        font-size: 16px;
+       
+    }
+
+    .header-section .navigation-header .topnav button.icon {
+        background: #2a4747;
+        float: right;
+        display: block;
+        padding: 16px 17px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        color: #fff;
+    }
+
+
+    .header-section .navigation-header {
+        padding: 10px 0;
+        background-color: #fff;
+    }
+
+    .left_menu {
+        background-color: #2a4747 !important;
+    }
+
+
+    .header-section .navigation-header {
+        width: 100%;
+        padding: 10px 0;
+
+    }
+
+    .Footer-section h2 {
+        margin: 0;
+        color: #ffffff;
+        font-size: 15px !important;
+        font-weight: 800;
+    }
+
+    .header-section .topheader-section .topheader-right a {
+        color: #f7f0f0;
+        font-size: 12px;
+        /* margin-left: 10px; */
+        border-left: 1px solid #d9d9d9;
+        padding-left: 10px;
+    }
+
+    button.icon:focus,
+    button.icon:hover {
+        border: 0;
+        outline: none;
+        background: #b3b3b3;
+    }
+
+    .services-section .services-box {
+        text-align: center;
+        margin-top: 36px;
+        padding: 30px 0 20px;
+        height: auto;
+    }
+
+    .ContactUs-section .ContactUs-form {
+        padding: 16px 25px !important;
+        box-shadow: 0 0 10px 1px #dddddd;
+        border-radius: 10px !important;
+        display: block !important;
+        background: #fff;
+        margin-top: 0px !important;
+    }
+
+    .ContactUs-section .ContactUs-form ul {
+        width: 100% !important;
+        margin-right: 20px;
+        margin-top: 12px !important;
+    }
+
+    .ContactUs-section .ContactUs-form form {
+        padding: 30px 20px !important;
+        border-radius: 10px;
+        background: #fff;
+        width: 100% !important;
+        margin-top: 12px !important;
+    }
+
+    .Footer-section h6 a {
+        transition: 0.4s all;
+        font-size: 10px !important;
+        color: #fff;
+        border-right: 2px solid #7b7b7b;
+        padding-right: 9px !important;
+        margin-right: 0px !important;
+
+    }
+
+    .Footer-section .Footerflex-box h5 {
+        font-size: 10px !important;
+    }
+
+    .design {
+        margin-top: 0px !important;
+    }
+
+    .bg_red h2 {
+        color: #fff;
+        font-size: 19px !important;
+    }
+
+    .bg_red h3 {
+        color: rgb(255, 213, 142);
+        font-size: 17px !important;
+    }
+
+    .bg_red p {
+        color: #fff;
+        margin-bottom: 25px;
+        line-height: 19px !important;
+        font-size: 12px !important;
+    }
+
+    #about_bg {
+        background: url(./images/slider/about-rect1.png) center center;
+        /* background-size: cover; */
+        min-height: 0px !important;
+        padding: 0px 0% !important;
+        position: relative;
+        z-index: 9999;
+    }
+
+    .breadcrumb__links a {
+        font-size: 10px !important;
+        color: #476930;
+        margin-right: 18px;
+        display: inline-block;
+        position: relative;
+        font-weight: 900;
+    }
+
+    .breadcrumb__links span {
+        color: #000;
+        display: inline-block;
+        margin-left: -14px;
+        font-size: 10px !important;
+    }
+
+    .breadcrumb__text h4 {
+        color: #f9fbf6;
+        font-weight: 700;
+        font-size: 23px !important;
+        margin-top: 1px;
+    }
+
+    .tittle_heading {
+        padding-bottom: 0px !important;
+        position: relative !important;
+        z-index: 9999 !important;
+    }
+
+}

@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Graphs Industries</title>
-    <link rel="favicon" href="{{ asset('frontend/images/favicon.png') }}">
-    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <title>Graphs Industries - @yield('title')</title>
+    <meta name="description" content="@yield('description')">
+    <meta property="og:title" content="@yield('title')" />
+    <meta property="og:description" content="@yield('description')" />
+    <meta property="og:image" content="@yield('image')" />
 
+
+    <link rel="favicon" href="{{ asset('favicon.png') }}">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
     <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css') }}">
@@ -65,7 +70,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="{{url('/')}}">
-                        <img src="{{ asset('logo.jpeg')}}" class="img-responsive">
+                            <img src="{{ asset('logo.jpeg')}}" class="img-responsive">
                         </a>
                     </div>
                 </div>
@@ -119,10 +124,10 @@
                         <h3>Important <span class="text_primary">Links</span></h3>
                         <ul>
                             <li>
-                                <a href="index.php"> <i class="fa-solid fa-angles-right"></i>Home</a>
+                                <a href="{{url('/')}}"> <i class="fa-solid fa-angles-right"></i>Home</a>
                             </li>
                             <li>
-                                <a href="about.php"> <i class="fa-solid fa-angles-right"></i> About Us </a>
+                                <a href="{{url('about')}}"> <i class="fa-solid fa-angles-right"></i> About Us </a>
                             </li>
                             <li>
                                 <a href="{{route('products')}}"> <i class="fa-solid fa-angles-right"></i>Products</a>
@@ -180,7 +185,7 @@
                 <div class="copy-right">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <h5>
-                            Copyright © 2023 <span>Graphs Industries</span>. All rights reserved
+                            Copyright © {{date('Y')}} <span>Graphs Industries</span>. All rights reserved
                         </h5>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">

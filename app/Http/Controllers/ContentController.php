@@ -21,7 +21,7 @@ class ContentController extends Controller
         //
 
 
-         $datas = Page::whereIn('type',[1,4,8,14])->orderBy('id', 'desc')->get();
+         $datas = Page::whereIn('type',[1,4,8,14,15])->orderBy('id', 'desc')->get();
         return view('backend/content/list', compact('datas'));
     }
 

@@ -60,7 +60,7 @@ $action = !empty($item) ? route('content.update', $item->id) : route('content.st
                                 <label>Select Type</label>
                                 <select name="type" class="form-control">
                                     <option value="">-Select Type-</option>
-                                    @foreach('\App\Type'::whereIn('id',[2,1,4,8,14, 15])->get() as $type)
+                                    @foreach('\App\Type'::whereIn('id',[2,1,4,8,14,15])->get() as $type)
                                     <option
                                         {{ !empty($item) && $item->type==$type->id ? 'selected' : ($type==old('type') ? 'selected':'') }}
                                         value="{{$type->id}}">{{ ucfirst($type->title)}}</option>

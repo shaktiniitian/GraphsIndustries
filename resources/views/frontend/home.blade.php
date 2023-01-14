@@ -49,7 +49,7 @@
         <div class="row">
             <div class="col-md-5 col-sm-5 col-xs-12">
                 <div class="about-img">
-                    <img src="{{asset('frontend/images/About/photo0212.jpg') }}">
+                    <img src="{{ asset('normal_images/'.$about->image ) }}" class="img-responsive">
                 </div>
             </div>
             <div class="col-md-7 col-sm-7 col-xs-12">
@@ -92,11 +92,35 @@
                 <div class="tab-content">
                     <div id="products" class="tab-pane fade in active">
                         @foreach($products as $product)
-                        <div class="col-md-3 col-sm-3 col-xs-12 pl-0">
-                            <div class="service-box2">
-                                <a href="{{ url('product/'. $product->id) }}">
-                                <img src="{{asset('normal_images/products/'.$product->file)}}">
-                                </a>
+                        <div class="col-md-3 col-sm-3 col-xs-12 pl-0 mb-4" style="padding-bottom: 20px">
+                            <div class="card">
+
+                                <div class="card-header">
+                                    <img class="img-responsive"
+                                        src="{{asset('normal_images/products/'.$product->file)}}">
+                                </div>
+
+                                <div class="card-body">
+
+                                    <h6>{{ substr($product->title,0,50) }}</h6>
+
+                                    <p class="card-text" style="padding:2px">{{
+                                        substr(strip_tags($product->description), 0, 200)}}
+                                        {{
+                                        substr(strip_tags($product->description), 0, 200) > 200 ? '...' : ''
+                                        }}
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="{{ url('product/'. $product->id) }}">
+                                        <button class="btn btn-primary pull-right">Read More</button>
+                                    </a>
+                                </div>
+                                {{-- <a href="{{ url('product/'. $product->id) }}">
+
+                                </a> --}}
+
+
                             </div>
                         </div>
                         @endforeach

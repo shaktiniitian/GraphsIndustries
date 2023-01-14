@@ -14,6 +14,13 @@
 // Route::get('/', function () {
 //     return view('frontend/home');
 // });
+Route::get('/ip', function(){
+    $ip =   \Request::ip();
+	// $ip = '14.99.92.146';
+    $data = \Location::get($ip);
+    return $data;
+});
+
 Route::get('/', 'DefaultController@home');
 // Route::get('/{url}', 'DefaultController@pageDetail')->name('url');
 Route::get('/about', 'DefaultController@about');
@@ -65,6 +72,7 @@ Route::resource('/files', 'FileController');
 Route::get('/post-gallery/{id}', 'GalleryController@pageGallery');
 
 Route::resource('/products', 'ProductController');
+Route::resource('/product-gallery', 'ProductGalleryController');
 Route::resource('/videos', 'VideoController');
 
 

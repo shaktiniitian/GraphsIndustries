@@ -468,6 +468,10 @@
                      padding-right: 25px;
                  }
 
+                 .Sliderbanner-section{
+                    padding-top: 80px;
+ 
+                 }
                  .timeline-2::before {
                      left: 60px;
                      border: medium solid white;
@@ -1458,6 +1462,12 @@
                  .header-section .navigation-header {
                      display: block !important;
                  }
+                 .images img {
+                    width: 100%;
+                 }
+                 .navbar-brand img{
+                    height: 97%;
+                 }
 
                  .custom-class {
                      display: block;
@@ -1473,6 +1483,9 @@
              @media screen and (max-width: 600px) {
                  .header-section .navigation-header .topnav a:not(:first-child) {
                      display: none;
+                 }
+                 .images img {
+                    width: 100%;
                  }
 
                  .Certified {
@@ -5244,15 +5257,17 @@
                  padding: 3em 0em;
                  background: #f28b0014;
              }
+             .card-footer{
+                padding-bottom: 30px;             }
 
              .card {
                  position: relative;
                  max-width: 371px;
+                 background-color: #fff;
                  height: auto;
-                 background: linear-gradient(-45deg, #d07c0a, #f28b00b8);
                  border-radius: 15px;
                  margin: 0 auto;
-                 padding: 40px 20px;
+                 padding: 19px 10px;
                  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
                  box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
                  -webkit-transition: .5s;
@@ -5339,7 +5354,7 @@
                  font-size: 13px;
              }
 
-             .card a {
+             /* .card a {
                  position: relative;
                  z-index: 2;
                  background: #fff;
@@ -5359,7 +5374,7 @@
 
              .card a:hover {
                  text-decoration: none;
-             }
+             } */
 
              /* ****************************************** FREE DEMO SECTION CSS */
 
@@ -5759,6 +5774,12 @@
                  .plan-update .container .card .imgContainer {
                      left: -2px;
                  }
+              
+                 .Sliderbanner-section{
+                    padding-top: 80px;
+ 
+                 }
+               
              }
 
              /* ****************************************** BLOGS SECTION CSS */
@@ -5780,6 +5801,12 @@
                      padding-bottom: 0;
                      margin-bottom: 0;
                  }
+                 .navbar-brand img{
+                    height: auto;
+                    width: 100%;
+                 }
+            
+           
              }
 
              @media (min-width: 1200px) {
@@ -5805,6 +5832,7 @@
                      padding: 46.5px 35px;
                      right: 0;
                  }
+             
              }
 
              @media (min-width: 992px) {

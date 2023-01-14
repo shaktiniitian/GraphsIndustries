@@ -18,8 +18,9 @@ class DefaultController extends Controller
 
             $sliders = HomeSlider::where('status','1')->get();
             $products = Product::where('status','1')->get();
+            $about = Page::where('status','1')->where('type', '8')->first();
         
-        return view('frontend/home', compact('sliders','products'));
+        return view('frontend/home', compact('sliders','products','about'));
 
 
     }
@@ -95,8 +96,7 @@ public function saveLead(Request $request){
 
     public function productDetail(Request $request){
 
-        $item = Product::find($request->id);
-
+        $item = Product::with('galleries')->find($request->id);
         return view('frontend/product-detail', compact('item'));
 
     }

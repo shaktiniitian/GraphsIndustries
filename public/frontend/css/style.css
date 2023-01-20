@@ -652,7 +652,22 @@
                      -webkit-transition: .5s;
                      transition: .5s;
                      margin-bottom: 15px !important;
+                     min-height: 450px;
                  }
+
+                 .contactbox {
+                    position: relative;
+                    max-width: 100% !important;
+                    height: auto;
+                    border-radius: 15px;
+                    margin: 0 auto;
+                    padding: 15px 35px !important;
+                    -webkit-box-shadow: 0 10px 15px rgb(0 0 0 / 10%);
+                    box-shadow: 0 10px 15px rgb(0 0 0 / 10%);
+                    -webkit-transition: .5s;
+                    transition: .5s;
+                    margin-bottom: 15px !important;
+                }
 
                  .card a {
                      position: relative;

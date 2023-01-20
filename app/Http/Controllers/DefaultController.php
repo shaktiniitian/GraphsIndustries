@@ -17,7 +17,7 @@ class DefaultController extends Controller
     public function home(){
 
             $sliders = HomeSlider::where('status','1')->get();
-            $products = Product::where('status','1')->get();
+            $products = Product::where('status','1')->take(4)->get();
             $about = Page::where('status','1')->where('type', '8')->first();
         
         return view('frontend/home', compact('sliders','products','about'));

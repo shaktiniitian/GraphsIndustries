@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row" style="padding-top: 40px; padding-bottom:20px">
             <div class="col-md-6">
-                @if(!empty($item->galleries))
+                @if(count($item->galleries) > 0)
                 <div id="myCarousel" class="carousel slide images" data-ride="carousel">
                     <div class="carousel-inner">
                         @foreach ($item->galleries as $key=>$gallery)

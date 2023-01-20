@@ -16,7 +16,7 @@
 
 <section class="about-section">
     <div class="container">
-        <div class="row">
+        <div class="row contactbox">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="right-img">
                     <div class="">

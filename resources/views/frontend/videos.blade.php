@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row">
             @foreach('\App\Video'::where('status',1)->get() as $item)
-            <div class="col-md-3 col-sm-3 col-xs-12" style="padding-bottom: 20px">
+            <div class="col-md-3 col-sm-6 col-xs-12" style="padding-bottom: 20px">
                 <div class="card" style="padding: 0px; background:#fff">
 
                     <iframe width="100%" height="315" src="{{$item->url}}" frameborder="0"

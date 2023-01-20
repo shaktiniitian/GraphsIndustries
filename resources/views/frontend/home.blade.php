@@ -92,11 +92,11 @@
                 <div class="tab-content">
                     <div id="products" class="tab-pane fade in active">
                         @foreach($products as $product)
-                        <div class="col-md-3 col-sm-3 col-xs-12 pl-0 mb-4" style="padding-bottom: 20px">
+                        <div class="col-md-3 col-sm-6 col-xs-12 pl-0 mb-4" style="padding-bottom: 20px">
                             <div class="card">
 
                                 <div class="card-header">
-                                    <img class="img-responsive"
+                                    <img style="min-height: 200px;max-height: 200px; width:100%" class="img-responsive"
                                         src="{{asset('normal_images/products/'.$product->file)}}">
                                 </div>
 

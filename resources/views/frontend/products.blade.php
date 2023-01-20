@@ -7,11 +7,11 @@
     <div class="container">
         <div class="row">
             @foreach('\App\Product'::where('status',1)->get() as $item)
-            <div class="col-md-3 col-sm-3 col-xs-12" style="padding-bottom: 20px">
+            <div class="col-md-3 col-sm-6 col-xs-12" style="padding-bottom: 20px">
                 <div class="card">
                     <div class="card-body">
 
-                        <img class="img-responsive" style="min-height: 200px"
+                        <img class="img-responsive" style="min-height: 200px;max-height: 200px; width:100%"
                             src="{{asset('normal_images/products/'.$item->file)}}" alt="Card image cap">
                         <div class="card-body" style="padding:1px">
                             <h6 class="card-title text-left text-capitalize" style="color:#292828">

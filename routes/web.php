@@ -42,7 +42,7 @@ Route::get('/faq', function(){
 })->name('faq');
 
 Route::get('/contact', function(){
-    $item = \App\Page::where('type', 2)->first();
+     $item = \App\Page::where('type', 2)->first();
     return view('frontend/contact', compact('item'));
 })->name('contact');
 
